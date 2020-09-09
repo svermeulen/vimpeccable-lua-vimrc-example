@@ -29,10 +29,12 @@ end)
 -- Keep the cursor in place while joining lines
 vimp.nnoremap('J', 'mzJ`z')
 
-vimp.nnoremap('<leader>ev', [[:vsplit ~/.config/nvim/init.vim<cr>]])
--- Or alternatively:
+vimp.nnoremap('<leader>ev', ':vsplit ~/.config/nvim/plugged/vimpeccable-lua-vimrc-example/lua/vimrc.lua<cr>')
+-- Or:
+-- vimp.nnoremap('<leader>ev', [[:vsplit ~/.config/nvim/plugged/vimpeccable-lua-vimrc-example/lua/vimrc.lua<cr>]])
+-- Or:
 -- vimp.nnoremap('<leader>ev', function()
---   vim.cmd('vsplit ~/.config/nvim/init.vim')
+--   vim.cmd('vsplit ~/.config/nvim/plugged/vimpeccable-lua-vimrc-example/lua/vimrc.lua')
 -- end)
 
 vim.cmd('colorscheme gruvbox')
